@@ -60,7 +60,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
 { counter-reset: source-line 0; }
@@ -435,11 +435,11 @@ resulting vectors.</p>
 <span id="cb1-29"><a href="#cb1-29" tabindex="-1"></a><span class="co"># Check properties</span></span>
 <span id="cb1-30"><a href="#cb1-30" tabindex="-1"></a>mle <span class="ot">&lt;-</span> mig<span class="sc">::</span><span class="fu">fit_mig</span>(samp, <span class="at">beta =</span> beta)</span>
 <span id="cb1-31"><a href="#cb1-31" tabindex="-1"></a><span class="fu">max</span>(<span class="fu">abs</span>(mle<span class="sc">$</span>xi <span class="sc">-</span> xi))</span>
-<span id="cb1-32"><a href="#cb1-32" tabindex="-1"></a><span class="co">#&gt; [1] 0.04395097</span></span>
+<span id="cb1-32"><a href="#cb1-32" tabindex="-1"></a><span class="co">#&gt; [1] 0.04204638</span></span>
 <span id="cb1-33"><a href="#cb1-33" tabindex="-1"></a><span class="fu">norm</span>(mle<span class="sc">$</span>Omega <span class="sc">-</span> Omega, <span class="at">type =</span> <span class="st">&quot;f&quot;</span>)</span>
-<span id="cb1-34"><a href="#cb1-34" tabindex="-1"></a><span class="co">#&gt; [1] 0.1189646</span></span>
+<span id="cb1-34"><a href="#cb1-34" tabindex="-1"></a><span class="co">#&gt; [1] 0.1332916</span></span>
 <span id="cb1-35"><a href="#cb1-35" tabindex="-1"></a><span class="fu">max</span>(<span class="fu">abs</span>(<span class="dv">1</span> <span class="sc">-</span> mle<span class="sc">$</span>Omega<span class="sc">/</span>Omega))</span>
-<span id="cb1-36"><a href="#cb1-36" tabindex="-1"></a><span class="co">#&gt; [1] 0.08561322</span></span></code></pre></div>
+<span id="cb1-36"><a href="#cb1-36" tabindex="-1"></a><span class="co">#&gt; [1] 0.08645978</span></span></code></pre></div>
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2 class="unnumbered">References</h2>

@@ -2,23 +2,21 @@
 % Please edit documentation in R/RcppExports.R
 \name{mig_lcv}
 \alias{mig_lcv}
-\title{Likelihood cross-validation for kernel density estimation with MIG}
+\title{Likelihood cross-validation for MIG density estimation}
 \usage{
-mig_lcv(x, beta, Omega)
+mig_lcv(x, Omega, beta)
 }
 \arguments{
-\item{x}{\code{n} by \code{d} matrix of quantiles}
-
-\item{beta}{\code{d} vector \eqn{\boldsymbol{\beta}} defining the half-space through \eqn{\boldsymbol{\beta}^{\top}\boldsymbol{\xi}>0}}
+\item{x}{\code{n} by \code{d} matrix of observations}
 
 \item{Omega}{\code{d} by \code{d} positive definite scale matrix \eqn{\boldsymbol{\Omega}}}
+
+\item{beta}{\code{d} vector \eqn{\boldsymbol{\beta}} defining the half-space through \eqn{\boldsymbol{\beta}^{\top}\boldsymbol{\xi}>0}}
 }
 \value{
-the value of the likelihood cross-validation criterion
+LCV criterion value
 }
 \description{
-Given a data matrix over a half-space defined by \code{beta},
-compute the log density using leave-one-out cross validation,
-taking in turn an observation as location vector and computing the
-density of the resulting mixture.
+Likelihood cross-validation criterion function.
 }
+\keyword{internal}

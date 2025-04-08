@@ -12,21 +12,21 @@ library(mig)
 set.seed(0)
 
 ## -----------------------------------------------------------------------------
-#  library(statmod)
-#  penult <- mev::smith.penult("invgauss", method = "pot",
-#                    qu = seq(0.9, 0.9995, by = 0.0005),
-#                 mean = 1, shape = 1 / 1)
-#  plot(penult$qu,
-#       penult$shape,
-#       xlab = "quantile level",
-#       xlim = c(min(penult$qu), 1),
-#       ylim = c(0, 0.25),
-#       yaxs = "i",
-#       xaxs = "i",
-#       pch = 20,
-#       ylab = "penultimate shape",
-#       type = 'l',
-#       bty = "l")
+# library(statmod)
+# penult <- mev::smith.penult("invgauss", method = "pot",
+#                   qu = seq(0.9, 0.9995, by = 0.0005),
+#                mean = 1, shape = 1 / 1)
+# plot(penult$qu,
+#      penult$shape,
+#      xlab = "quantile level",
+#      xlim = c(min(penult$qu), 1),
+#      ylim = c(0, 0.25),
+#      yaxs = "i",
+#      xaxs = "i",
+#      pch = 20,
+#      ylab = "penultimate shape",
+#      type = 'l',
+#      bty = "l")
 
 ## -----------------------------------------------------------------------------
 # Create projection matrix onto the orthogonal complement of beta
